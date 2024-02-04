@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="https://kit.fontawesome.com/d0f9774863.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeHack</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    
+    <main class="container__main">
+        <nav class="cabecalho">
+            <img class="logo" src="./assets/logo.svg" alt="" srcset="">
+            <p class="logo__nome">
+                Decode<span class="logo__nome__destaque palavra-destaque">Hack</span>
+            </p>
+    </nav>
+        <header class="container__header">
+            <h1 class="titulo fadeIn first" id="titulo">
+                Proteja suas <span class="palavra-destaque">mensagens</span> com total segurança
+            </h1>
+            <h2 class="subtitulo fadeIn second">
+                Seja nos negócios ou nas conversas pessoais, sua privacidade é fundamental. Garanta a confidencialidade das suas palavras com nosso aplicativo de confiança.
+            </h2>
+            <a href="#" class="btn fadeIn third" id="btn-iniciar">Quero começar</a>
+        </header>
+        <div class="img__monitor">
+            <textarea id="textArea" name="texto-saida" cols="30" rows="10" 
+            class="img__texto_monitor fadeIn third" spellcheck="false"></textarea>
+            <a href="javascript:copiarTexto()" id="btn-copiar" class="btn__copiar esconder"><img src="./assets/copiar-arquivo.png" alt="Copiar" srcset=""></a>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Robson Silva | 
+            <i class="fa-brands fa-github fa-xl" style="color: #00C933;"></i>
+            <i class="fa-brands fa-linkedin fa-xl" style="color: #00C933;"></i>
+            <i class="fa-brands fa-instagram fa-xl" style="color: #00C933;"></i>
+            Para o desafio da Oracle Next Education e Alura</p>
+    </footer>
+    <script src="./js/eventos.js"></script>
+    <script src="./js/monitor_text.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
