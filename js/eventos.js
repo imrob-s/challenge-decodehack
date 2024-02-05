@@ -32,7 +32,7 @@ function mostrarMenu() {
   titulo.textContent = "Escolha uma opção:";
 
   // Trocar o texto do h2
-  subtitulo.textContent = "É permitido somente letras minúscula e sem acento";
+  subtitulo.textContent = "É permitido somente letra minúscula e sem acento";
   subtitulo.style.fontSize = "1rem";
 
   botaoIniciar.remove();
