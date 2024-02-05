@@ -1,3 +1,6 @@
+/**
+ * Seleciona os elementos da DOM necessários para interação e manipulação.
+ */
 var botaoIniciar = document.querySelector("#btn-iniciar");
 var botaoCopiar = document.querySelector("#btn-copiar");
 var botaoCriptografar = document.querySelector("#btn-criptografar");
@@ -10,6 +13,9 @@ var subtitulo = document.querySelector(".subtitulo");
 var header = document.querySelector(".container__header");
 var menuExibido = false;
 
+/**
+ * Adiciona um ouvinte de evento ao textarea para mostrar o menu quando o foco é recebido.
+ */
 textArea.addEventListener("focus", function (event) {
   if (!menuExibido) {
     mostrarMenu();
@@ -19,11 +25,17 @@ textArea.addEventListener("focus", function (event) {
   botaoCopiar.classList.remove("esconder");
 });
 
+/**
+ * Adiciona um ouvinte de evento ao botão iniciar para mostrar o menu.
+ */
 botaoIniciar.addEventListener("click", function (event) {
   mostrarMenu();
   menuExibido = true;
 });
 
+/**
+ * Mostra o menu e configura os botões e texto de acordo.
+ */
 function mostrarMenu() {
   inputText();
   header.style.alignItems = "center";
@@ -62,11 +74,17 @@ function mostrarMenu() {
   header.appendChild(subtitulo);
 }
 
+/**
+ * Configura o textarea.
+ */
 function inputText() {
   imgTextoMonitor.style.backgroundImage = "none";
   textArea.placeholder = "Digite aqui seu texto...";
 }
 
+/**
+ * Copia o texto dentro do textarea para a área de transferência do sistema.
+ */
 function copiarTexto() {
   var copyText = document.getElementById("textArea");
 
@@ -79,5 +97,5 @@ function copiarTexto() {
     window.getSelection().removeAllRanges();
   }, 150);
 
-  alert("Texto copiado para a area de transferencia");
+  alert("Texto copiado para a área de transferência");
 }
