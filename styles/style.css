@@ -170,14 +170,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 65px;
+    width: max-content;
     flex-wrap: wrap;
     bottom: 0;
-    background-color: rgba(2,10,6, 0.9);
+    background-color: rgba(0,0,0, 0.9);
 }
 
 .social {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 80%;
 }
 
