@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Press+Start+2P&family=Roboto:wght@300;700&display=swap');
 
 
 /* Reset CSS */
@@ -113,7 +113,7 @@ body {
 
 .subtitulo {
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .img__monitor {
@@ -170,10 +170,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 65px;
-    width: max-content;
+    width: auto;
     flex-wrap: wrap;
     bottom: 0;
     background-color: rgba(0,0,0, 0.9);
+    font-weight: 300;
 }
 
 .social {
@@ -182,7 +183,7 @@ body {
     width: 80%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1108px) {
     .cabecalho {
         justify-content: center;
         margin-top: 20px;
@@ -225,10 +226,16 @@ body {
         margin-top: -30%;
     }
 
+    .rodape {
+        align-items: center;
+    }
+
     .rodape > p {
-        text-align: center;
-        
-        font-size: 1rem;
+        flex-direction: column;
+    }
+    
+    .social {
+        width: 100%;
     }
 }
 
