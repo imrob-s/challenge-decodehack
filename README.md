@@ -5,7 +5,7 @@ Aplicativo web de criptografia/descriptografia de texto desenvolvido como desafi
 ## 🚀 Funcionamento
 O aplicativo permite que o usuário criptografe ou descriptografe textos de forma simples e sem burocracias. Basta digitar o texto na "imagem do monitor" e clicar em "Criptografar" ou "Descriptografar".
 
-![Imagem do Aplicativo](./assets/decodehack.PNG){width=50%}
+![Imagem do Aplicativo](./assets/decodehack.PNG)
 
 
 Não é necessário inserir chaves secretas. O sistema de criptografia utiliza substituições simples de letras.
@@ -31,6 +31,4 @@ As letras são convertidas da seguinte forma:
 
 ## 📄 Licença
 Este projeto está sob a licença GPL-3.0.
-
-Espero que este `README.md` capture as principais informações sobre o aplicativo DecodeHack de forma sucinta e objetiva. Fique à vontade para sugerir quaisquer melhorias!
 
